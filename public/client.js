@@ -37,7 +37,13 @@ user_send.addEventListener("click",()=>{
 });
 
 
-//output to the html file
+//output to the html file for outgoing message
 socket.on('chatMessage',msg=>{
     outgoingmsg.innerHTML += '<div class="my-chat" id="mychat">' +msg + '</div>';
 });
+
+//output to the html file for incomming message
+socket.on ('chatMessage',msg=>{
+  incommingmsg.innerHTML+= ' <div class="client-chat" id="clientchat">'+ msg   +'</div>';
+
+})
