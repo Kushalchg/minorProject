@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: gray;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*firend box section*/
+
+.friend-box{
+    width: 400px;
+    height: 450px;
+    background-color: rgb(233, 239, 189);
+    overflow: hidden;
+    border-radius: 30px;
+    position: relative;
+}
+.friend-title{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(159, 127, 255);
+    padding: 15px;
+}
+
+#friend-detail {
+    text-decoration: none;
+}
+/*chat box section*/
+
+.chat-box{
+    width: 400px;
+    height: 450px;
+    background-color: rgb(238, 240, 223);
+    overflow: hidden;
+    border-radius: 30px;
+    position: relative;
+}
+
+.client{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(159, 127, 255);
+    padding: 15px;
+}
+.client img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+
+}
+.client-info{
+    color: beige;
+    padding: 16px;
+
+}
+.client-info p{
+    color: greenyellow;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+/* chat section*/
+
+.chats{
+    width: 100%;
+    padding: 0 15px;
+    color: aliceblue;
+    position: relative;
+    font-size: .9em;
+    overflow-y: scroll;
+    height: 300px;
+}
+.client-chat{
+    width: 60%;
+    word-wrap: break-word;
+    background-color: black;
+    padding: 7px 10px;
+    margin: 7px;
+    border-radius: 10px 10px 10px 0px;
+}
+.my-chat{
+
+    width: 60%;
+    word-wrap: break-word;
+    background-color: black;
+    padding: 7px 10px;
+    margin: 7px;
+    border-radius: 10px 10px 0px 10px;
+    margin: 5px 0 5px auto;
+}
+/*input section*/
+.chat-input{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    background-color: white;
+    padding: 15px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+
+
+}
+.chat-input input{
+
+    width: calc(100% - 40px);
+    height: 100%;
+    background-color: rgb(218, 210, 149);
+    border-radius: 50px;
+    color: black;
+    font-size: 1.2em;
+    padding: 0 15px;
+
+}
+.send-btn{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    overflow: hidden;
+    position: relative;
+    margin-left:5px ;
+    cursor:pointer;
+    transition: .4s ease-in-out;
+}
+
+.send-btn:active{
+    transform: scale(.85);
+}
+
+.send-btn img{
+    width: 100%;
+    height: 100%;
+}
