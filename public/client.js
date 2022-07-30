@@ -44,6 +44,6 @@ socket.on('chatMessage',msg=>{
 
 //output to the html file for incomming message
 socket.on ('chatMessage',msg=>{
-  chats.innerHTML+= ' <div class="client-chat" id="clientchat">'+ msg   +'</div>';
+            chats.innerHTML+= ' <div class="client-chat" id="clientchat">'+ msg   +'</div>';
 
 })
